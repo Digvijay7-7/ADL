@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+    <head>  
+        <title>While Loop</title>
+    </head>
+
+    <body>
+    	 <div id="tweet"></div>
+         <script type="text/javascript">
+            var newTweet = "";
+            var tweets = ["I love you","We Love You","He Love You","She Love you"];
+            var i = 0;
+            while(i < tweets.length){
+                newTweet = newTweet + "<p>" + tweets[i] + " </p>";
+                i++;
+            }
+            document.getElementById("tweet").innerHTML = newTweet;
+
+
+         </script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <title>Guess Number by Computer</title>
+    
+</head>
+
+<body>
+
+    <p><h3> How many fingers am I holding up?</h3></p>
+    <p><input type="number" placeholder="no between 1 to 5" id="guess"> <button id="button">Guess</button></p>
+     
+
+    <script type="text/javascript">
+        document.getElementById("button").onclick = function() {
+            var myNumber = document.getElementById("guess").value;
+            var gotIt = false;
+            var numberOfGuess = 1;
+            while(gotIt == false){
+                var number = Math.random();
+                number = number*6;
+                number = Math.floor(number);
+                if(number == myNumber){
+                    gotIt = true;
+                    alert("You got it! It wasa a " + number + ", It took me " + numberOfGuess + " guessess");
+                }else{
+                    numberOfGuess++;
+                }
+            }
+        }  
+    </script>
+</body>
+</html> 
+

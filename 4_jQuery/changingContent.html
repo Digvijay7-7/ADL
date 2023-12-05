@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+    <head>
+        <title>Changing Text when circle is clicked</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style type="text/css">
+            #circle{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                border-radius: 50%;
+                margin: 10px;
+            }
+            iframe{
+                width: 750px;
+                height: 400px;
+            }
+           
+        </style>
+    </head>
+
+    <body>
+        <div id="circle"></div>
+        <p>This is Text</p>
+        <iframe src="http://www.codestars.com" ></iframe>
+        
+       
+        <script type="text/javascript">
+            $("#circle").click(function(){ //.hover use for when mouse hover 
+                alert($("p").html()); //to show alert
+                $("p").html("This is changed Text"); //to show changed text
+
+            });
+            /*$("#circle").click(function(){
+                $("iframe").attr("src","https://www.youtube.com/embed/j93KT7wCGz4");
+            });*/
+
+        </script>
+    </body>
+
+
+
+</html>

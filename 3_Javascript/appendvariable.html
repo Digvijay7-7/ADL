@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<head>
+    <title>appendvariable</title>
+    
+</head>
+
+<body>
+    <input type="text" id = "text">
+    <button id="myButton">Change text</button>
+    <p id="javascript">Javascript</p>
+    
+    <script type="text/javascript">
+        
+        document.getElementById("myButton").onclick = function() {
+            var text = "";
+            text = document.getElementById("text").value;
+            document.getElementById("javascript").innerHTML = text;
+            
+        }
+          
+    </script>
+</body>
+</html> 
+

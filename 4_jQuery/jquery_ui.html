@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <head>
+        <title> Jquery UI</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="jquery-ui/jquery-ui.js"></script>
+        <link href="jquery-ui/jquery-ui.css">
+        <style type="text/css">
+            #div1{
+                width: 400px;
+                height: 600px;
+                background-color: antiquewhite;
+            }
+        </style>
+        
+    </head>
+
+    <body>
+        <div id="div1">
+            <div id="draggable">draggable</div>
+        </div>
+
+        <script type="text/javascript">
+            $( "#draggable" ).draggable({ axis: "x" }); // to move object only horizontal
+            $( "#draggable" ).draggable({containment: "parent"}); // to move object only vertical
+            //$( "span" ).draggable({ containment: "#containment-wrapper", scroll: false });
+        </script>
+    </body>
+</html>
+

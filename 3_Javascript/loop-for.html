@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+    <head>  
+        <title>For Loop</title>
+    </head>
+
+    <body>
+    	 <div id="tweet"></div>
+         <script type="text/javascript">
+            var newTweet = "";
+            var tweets = ["I love you","We Love You","He Love You","She Love you"];
+            for(var i = 0;i<tweets.length;i++){
+                newTweet = newTweet + "<p>" + tweets[i] + "</p>"
+            }
+            document.getElementById("tweet").innerHTML = newTweet;
+
+
+         </script>
+    </body>
+</html>

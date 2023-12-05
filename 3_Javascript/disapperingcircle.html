@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <head>
+        <title>Disappringcircles</title>
+        <style type="text/css">
+            #one {
+                background-color: red;
+                
+            }
+            #two {
+                background-color: blue;
+                
+            }
+            #three {
+                background-color: green;
+                
+            }
+            .circle{
+                width: 100px;
+                height: 100px;
+                margin: 10px;
+                border-radius: 50%;
+                float: left;
+            }
+            
+
+
+        </style>
+    </head>
+        
+    <body>
+        <div id="one" class="circle"></div>
+        
+        <div id="two" class="circle"></div>
+       
+        <div id="three" class="circle"></div>
+        
+
+        <script>
+            document.getElementById("one").onclick = function(){
+                document.getElementById("one").style.display = "none";
+            }
+            document.getElementById("two").onclick = function(){
+                document.getElementById("two").style.display = "none";
+            }
+            document.getElementById("three").onclick = function(){
+                document.getElementById("three").style.display = "none";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+    <head>
+        <title>Click Operation</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <style type="text/css">
+            #circle{
+                width: 100px;
+                height: 100px;
+                background-color: brown;
+                border-radius: 50%;
+                margin: 10px;
+            }
+            .square{
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                margin: 10px;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div id="circle"></div>
+        <div class="square"></div>
+        <div class="square"></div>
+
+        <script type="text/javascript">
+            /* all div are clicking
+            $("div").click(function(){
+                alert("Div is clicked");
+            });*/
+            $("#circle").click(function(){
+                alert("Circle is clicked");
+            });
+            $(".square").click(function(){
+                alert("Square is clicked");
+            });
+            
+
+
+
+        </script>
+    </body>
+
+
+
+</html>
